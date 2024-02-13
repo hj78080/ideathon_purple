@@ -1,7 +1,7 @@
 import torch
 from torch.utils.data import Dataset, DataLoader
 from transformers import BertTokenizer, BertForSequenceClassification
-from labeling import read_excel  # labeling.py에는 read_excel 함수가 정의되어 있다고 가정합니다.
+from labeling import read_excel
 
 # 가상의 데이터셋 클래스 정의 (Fact: 0, Argument: 1)
 class FactArgumentDataset(Dataset):
